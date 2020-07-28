@@ -1,0 +1,120 @@
+start 
+
+1. app run -> csv read
+b. csv not there -> error msg and exit
+
+2. 4 options
+a. Generate Bill     b. Edit Price      c. Show rates       d. Exit 
+
+3.
+a. Generate Bill
+    -show list of books - listBooks()
+    -ask user to enter book number userInput
+-valid number -> ask user to enter number of books (Default 1) userInput
+    tempVar Bno , Qty , Price  total += 
+    [ a12 2 350 700]
+    [ b11 4 100 400]
+    GT = 1100  
+
+-Do you want to add more books? 
+-Yes(show list of books)                No (Do you want to email the bill)
+-same book -> "Are you sure you want to edit the already listed book?"
+-yes -> count++ 
+
+
+b. Edit Price
+-price -> CSV write and price has been edited
+-show list of books and which book you want to edit
+
+c. Show rates
+-show all books with rates
+
+d. Exit 
+
+write a problem statement
+ 
+ csv read -> library
+email service -> library
+debugging library -> pry
+require_all
+rspec test
+
+class vs instance method ruby
+blocks in ruby
+iterators in ruby
+getters and setters 
+
+project name -> app.rb 
+create a class billingcalculator
+initialize constructor and initialize x,y 
+sum method 
+test method 
+
+
+
+
+include <iostream>
+Using namespace std;
+
+string cars[3] [3] = {{"Volvo", "001", "500" }, {"BMW", "002", "750"}, {"Ford", "003", "600"}};
+
+Void generateBIll() {
+{
+    cout<<"List of Books \n";
+for(int i = 0; i < 3; i++) {
+    for(int j = 0; j < 3; j++) {
+          cout  << cars[i][j] <<"\t";
+    }
+    cout<< "\n";
+}
+}
+cout<<”Bill generated”;
+
+}
+
+Void EditPriceList(){
+cout<<”Price has been edited”;
+}
+
+Void ViewPriceList(){
+cout<<”Price list has been viewed”;
+}
+Void invalidOption(){
+cout<<”Invalid Option”;
+}
+
+Void mainMenu(int x){
+If (x==1){
+generateBill();
+}
+
+Else if (x==2)
+{
+EditPriceList();
+}
+
+Else if (x==3)
+{
+ViewPriceList();
+}
+Else {
+Invalid option();
+}
+}
+
+Int main()
+{
+Int x;
+Cout << “Enter your option”;
+cin>>x;
+mainMenu(x);
+Return 0;
+
+
+
+
+
+
+
+
+
